@@ -3,8 +3,9 @@
 *{
     padding: 0;
     margin: 0;
+    user-select: none
 }
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+
 
 
 *,
@@ -30,125 +31,102 @@ html {
    font-family: 'Oswald', sans-serif;
  }
  /* Doubleburger cheese  */
- .wrapper{
+ .datblackshi{
+  z-index: 2;
+  position: fixed;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.568);
+  width: 100%;
+  height: 50px;
+}
+
+
+
+.demontime{
+  z-index: 9;
+  transition-duration: 2s;
+ 
+    background-color: rgba(0, 0, 0, 0.658);
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+}
+.demontimesupreme{
+  right: 0;
+}
+
+.demontimep{
+  transition-duration: 2s;
+  display: block;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 50px;
+  cursor: pointer;
+  font-size: 50px;
+  position: relative;
+  left: 40%;
+  top: 20%;
+}
+.demontime p:hover{
+  color: rgb(0, 255, 42);
+}
+.imlosingit{
   display: none;
-   position: fixed;
-   top: 0px;
-   right: -100%;
-   height: 50%;
-   width: 100%;
-   background: rgba(0, 0, 0, 0.87);
- 
-   transition: all 0.6s;
- }
- #active:checked ~ .wrapper{
-   /*left: 0;*/
-   right:0px;
- }
- #active{
-   display: none;
- }
- .menu-btn{
-   display: none;
-   position: fixed; 
-   top: 0;
-   z-index: 2;
-   right: 20px;
- 
-   top: 20px;
-   height: 50px;
-   width: 50px;
-   text-align: center;
-   line-height: 50px;
-   border-radius: 50%;
-   cursor: pointer;
+  background-image: url(halal.png);
+  cursor: pointer;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
 
-   transition: all 0.3s ease-in-out;
- }
- .menu-btn span,
- .menu-btn:before,
- .menu-btn:after{
-    content: "";
-    position: absolute;
-    top: calc(50% - 22px);
-    left: 80%;
-    width: 40%;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.596);
-    transition: transform .3s cubic-bezier(0.215, 0.61, 0.355, 1);
- }
- .menu-btn:after:hover{
-   border-bottom: 2px solid rgb(255, 255, 255);
- }
- .menu-btn:before{
-   transform: translateY(-8px);
- }
- .menu-btn:after{
-   transform: translateY(8px);
- }
+  z-index: 32;
+}
+
+.orami{
+  background-image:url(haram.png) ;
+}
+.textcontainer{
  
 
+  user-select: none; 
 
- .wrapper ul{
- 
-   position: absolute;
-   top: 60%;
-   left: 40%;
-   height: 90%;
-   transform: translate(-500%, -50%);
-   list-style: none;
-   text-align: center;
- }
- .wrapper ul li{
-   height: 10%;
-   margin: 15px 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+  cursor: pointer;
+  font-size: 50px;
+  position: relative;
+  left: 20%;
+  top: 100px;
   
- }
- .wrapper ul li a{
-   text-decoration: none;
-   font-size: 25px;
-   
-   color: rgba(255, 255, 255, 0.788);
-
-   position: absolute;
- }
-
-
- .wrapper ul li a:hover{
-   color: #fffbfb;
- }
-
- .content{
-   position: absolute;
-   top: 50%;
-   left: 0%;
-   transform: translate(-50%, -50%);
-   z-index: -1;
-   text-align: center;
-   width: 100%;
-   color: #fdf3f3;
- }
- .content .title{
-   font-size: 40px;
-   font-weight: 700;
- }
- .content p{
-   font-size: 35px;
-   font-weight: 600;
- }
- 
-
+}
+.textcontainer a  {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-top: 10px;
+}
+.homechanges{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  display: none;
+}
+.homechanges2{
+  display: block;
+}
 /* Doubleburger cheese end */
 
 /* Header */
 .header{
-  z-index: 30;
+  z-index: 3;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.774) 0%, rgba(0, 0, 0, 0.788) 35%, rgba(0, 0, 0, 0.507) 100%);
   width: 100%;
   height: 44px;
   text-align:center;
   list-style: none;
   text-transform: capitalize;
-  font-size: 14x;
+  font-size: 14px;
   position: fixed; 
   top: 0;
   width: 100%;
@@ -185,16 +163,19 @@ html {
 
  }
 
- .cheat a{
-    background-image: url(logobase.png);
-    background-size: 100%;
-    display:none;
-    width: 50px;
-    height: 50px;
-   
-  
-
+ .cheat{
+  width: 50px;
  }
+ .cheat a{
+  background-image: url(logobase.png);
+  background-size: 100%;
+  display:none;
+  width: 50px;
+  height: 50px;
+ 
+
+
+}
  .cheat a:hover{
     background-image: url(logohover.png);
 
@@ -205,8 +186,10 @@ html {
  /* Home */
  
  #PageOne{
-   padding-left: 300px;
+  position: relative;
+   margin-left: 300px;
    padding-top: 200px;
+   padding-bottom: 500px;
  
  }
 
@@ -276,7 +259,6 @@ html {
 }
 .ligne7{
   background-color: rgba(0, 0, 0, 0.671);
-  box-shadow: 20px;
   width: 150px;
   height: 5px;
   position: relative;
@@ -325,7 +307,8 @@ html {
   padding: 30px;
   font-size: 40px;
  padding-top: 120px;
- 
+width: 100vh;
+height: 1px;
  float: right;
    text-decoration: none;
    color: white;
@@ -359,22 +342,26 @@ html {
 
  /* About */
  #Pagetwo{
+  position: relative;
+  margin-top: 300px;
   justify-content: space-between;
   padding-left: 200px;
-  padding-top: 1000px;
   display: flex;
   
   
 
  }
+
  .p2image{
+  position: relative;
+  right: 50px;
   z-index: -2;
   padding-bottom: 300px;
 padding-left: 200px;
   padding-top: 50px;
  }
  .p2image img{
- 
+ position: relative;
   border-radius: 20px;
    width: 400px;
  }
@@ -1060,9 +1047,11 @@ left: 0;
 
 /* Page Four */
 #Pagefour{
-padding: 90px;
-  padding-top: 250px;
+margin: 90px;
+ position: relative;
+ top: 800px;
   display: flex;
+  flex-wrap: wrap;
  
  }
  .p4image{
@@ -1076,7 +1065,7 @@ padding-left: 0px;
  .p4image img{
   z-index: 0;
   border-radius: 20px;
-   width: 400px;
+   width: 40vh;
  }
  
  .p4image:hover{
@@ -1112,8 +1101,8 @@ padding-left: 0px;
      }
 
    .ahoyo{
-    padding-top: 90px;
-    padding-left: 120px;
+    margin: 155px;
+   width: 1000px;
     
    }
   
@@ -1121,6 +1110,32 @@ padding-left: 0px;
     /* Mobile Support */
 
     @media screen and (max-width: 768px) {
+      .imlosingit{
+        display: block;
+      }
+      .p4image img{
+         width: 33vh;
+       }
+      #Pagefour{
+       display: flex;
+       justify-content: center;
+      }
+      .ahoyo{
+     position: relative;
+     top: 90px;
+        margin: -50px;
+       
+        
+       }
+       .ahoyo p {
+        font-size: 25px;
+       }
+     
+      .header{
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+      }
       .seperate{
         padding-bottom: 120px;
         padding-right: 0px;
@@ -1129,9 +1144,7 @@ padding-left: 0px;
        }
        .seperate2{
         position: relative;
-        top: 4
-        
-        00px;
+        top: 400px;
         left: 90px;
         
        
@@ -1179,24 +1192,28 @@ padding-left: 0px;
         display: block;
         position: relative;
         left: 70px;
+        width: 300px;
         
        }
     
       #Pagetwo{
         justify-content: center;
         padding-left: 0px;
-        padding-top: 450px;
+        width: 300px;
+        margin-top: 450px;
         flex-wrap: wrap;
      
        }
       .p2image{
         position: relative;
         left: 70px;
+        
         padding-top: 0px;
         padding-bottom: 0px;
       padding-left: 0px;
         padding-top: 00px;
        }
+       
        
     .quote{
       display: none;
@@ -1214,7 +1231,13 @@ padding-left: 0px;
      .quote4{
       display: block;
       position: relative;
-        left: 60px;
+        left: 50px;
+     }
+     .quote5 img{
+      width: 15px;
+     }
+     .quote6 img{
+      width: 15px;
      }
     .biographypar{
       display: none;
@@ -1230,7 +1253,7 @@ padding-left: 0px;
        }
         .header ul li {
             display: none;
-          
+        
           height: 60px;
         }
         .logo li{
@@ -1244,7 +1267,7 @@ padding-left: 0px;
         display: block;
       }
       #PageOne{
-        padding-left: 45px;
+        margin-left: 45px;
         padding-top: 100px;
       
       }
@@ -1252,23 +1275,24 @@ padding-left: 0px;
         width:300px;
       }
       .p2image img{
-        width:300px;
+        width:31vh;
       }
 
       .ligne3{
         left: 173px;
      
       }
+     
       .ligne4{
         left: 250px;
       }
 
       .ligne7{
-        left: 173px;
+        left: 153px;
      
       }
       .ligne8{
-        left: 250px;
+        left: 230px;
       }
       .myname{
 
