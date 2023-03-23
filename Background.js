@@ -19,7 +19,7 @@ window.onscroll = function (event) {
         body.style.transitionDuration = '2s'
     } else if (scroll >= 3400 && scroll < 4000) {
         // page4
-        body.style.backgroundColor = '#895C06';
+        body.style.backgroundColor = '#93C572';
     
     } else {
         // black
