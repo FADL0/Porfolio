@@ -63,11 +63,11 @@ function SmallScreen() {
 function BodyColor() {
     let w = innerWidth
     if (w < x) {
-        console.log("realS");
+
         SmallScreen();
 
     } else if (w > x) {
-        console.log("hmm");
+
         BigScreen();
 
 
