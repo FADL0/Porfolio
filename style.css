@@ -1,11 +1,12 @@
 * {
   padding: 0;
   margin: 0;
-  user-select: none
+  user-select: none;
+  box-sizing: border-box;
 }
 
 body {
-  -webkit-transition-duration: 2s;
+  background-color: black;
 }
 
 *,
@@ -334,7 +335,7 @@ html {
   padding: 30px;
   font-size: 40px;
   padding-top: 120px;
-  width: 100vh;
+
   height: 1px;
   float: right;
   text-decoration: none;
@@ -372,10 +373,10 @@ html {
 
 /* About */
 #Pagetwo {
-  position: relative;
+
   margin-top: 300px;
   justify-content: space-between;
-  padding-left: 200px;
+  padding-left: 300px;
   display: flex;
 
 
@@ -424,35 +425,33 @@ html {
   float: right;
 }
 
-.biographyparButBetter {
+#biographyparButBetter {
   display: none;
   font-size: 17px;
 }
 
-.biographyparButBetter a {
+#biographyparButBetter a {
   color: black;
 }
 
-.biographyparButBetter a:hover {
+#biographyparButBetter a:hover {
   color: rgb(0, 22, 150);
 }
 
-.biographypar {
+#biographypar {
+  width: 85vh;
   font-size: 28px;
 }
 
-.biographypar a {
+#biographypar a {
   color: black;
 }
 
-.biographypar a:hover {
+#biographypar a:hover {
   color: rgb(0, 22, 150);
 }
 
-.ahoy {
-  padding-top: 90px;
 
-}
 
 
 /* Page Three */
@@ -1130,11 +1129,14 @@ html {
 
 /* Page Four */
 #Pagefour {
-  margin: 90px;
+  gap: 40px;
+  padding-left: 150px;
+  padding-right: 450px;
   position: relative;
   top: 800px;
   display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 1000px;
+  justify-content: space-between;
 
 }
 
@@ -1151,7 +1153,7 @@ html {
 .p4image img {
   z-index: 0;
   border-radius: 20px;
-  width: 40vh;
+  width: 400px;
 }
 
 .p4image:hover {
@@ -1175,13 +1177,13 @@ html {
 
 .quote6 img {
   width: 40px;
-  float: right;
+  margin-left: 75%;
+
 }
 
 .Resumepar {
-  padding: 0px;
-  padding-left: 50px;
-  font-size: 47px;
+  font-size: 40px;
+  width: 650px;
 }
 
 .Resumepar span {
@@ -1193,38 +1195,40 @@ html {
 }
 
 .ahoyo {
-  margin: 155px;
-  width: 1000px;
-
+  position: relative;
+  top: 90px;
+  justify-content: center;
 }
 
 
 /* Mobile Support */
 
 @media screen and (max-width: 768px) {
+  .ahoyo {
+    top: 40px;
+
+  }
+
+  .Resumepar {
+    margin-left: 20px;
+    font-size: 25px;
+    width: 350px;
+  }
+
   .imlosingit {
     display: block;
   }
 
   .p4image img {
-    width: 33vh;
+    width: 270px;
+
   }
 
   #Pagefour {
-    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .ahoyo {
-    position: relative;
-    top: 90px;
-    margin: -50px;
-
-
-  }
-
-  .ahoyo p {
-    font-size: 25px;
   }
 
   .header {
@@ -1290,18 +1294,20 @@ html {
   }
 
 
-  .biographyparButBetter {
+  #biographyparButBetter {
+
     display: block;
     position: relative;
-    left: 70px;
-    width: 300px;
+    top: 40px;
+    left: 50px;
+    width: 320px;
 
   }
 
   #Pagetwo {
     justify-content: center;
-    padding-left: 0px;
-    width: 300px;
+    padding-left: 150px;
+    width: 0px;
     margin-top: 450px;
     flex-wrap: wrap;
 
@@ -1310,7 +1316,7 @@ html {
   .p2image {
     position: relative;
     left: 70px;
-
+    padding-right: 0;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -1329,13 +1335,15 @@ html {
   .quote3 {
     display: block;
     position: relative;
-    left: 60px;
+    left: 10%;
+    top: 40px;
 
   }
 
   .quote4 {
     display: block;
     position: relative;
+    top: 50px;
     left: 50px;
   }
 
@@ -1345,9 +1353,10 @@ html {
 
   .quote6 img {
     width: 15px;
+    margin-left: 85%;
   }
 
-  .biographypar {
+  #biographypar {
     display: none;
   }
 
@@ -1377,7 +1386,7 @@ html {
     display: inline-block;
   }
 
-  .biographypar2 {
+  #biographypar2 {
     display: block;
   }
 
@@ -1392,7 +1401,8 @@ html {
   }
 
   .p2image img {
-    width: 31vh;
+    width: 270px;
+
   }
 
   .ligne3 {
@@ -1425,15 +1435,5 @@ html {
     font-size: 80px;
   }
 
-  .fn {
-    padding: 30px;
-    font-size: 20px;
-    padding-top: 60px;
 
-    float: right;
-    text-decoration: none;
-    color: white;
-
-
-  }
 }
