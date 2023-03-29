@@ -21,7 +21,7 @@ function BigScreen() {
 
 
             body.style.backgroundColor = 'black';
-        } else if (scroll >= 3600 && scroll < 6000) {
+        } else if (scroll >= 3600 && scroll < 4500) {
 
             body.style.backgroundColor = '#93C572';
         } else {
@@ -48,7 +48,7 @@ function SmallScreen() {
 
             body.style.backgroundColor = 'black';
 
-        } else if (scroll >= 4700 && scroll < 6000) {
+        } else if (scroll >= 4700 && scroll < 5000) {
 
             body.style.backgroundColor = '#93C572';
 

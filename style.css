@@ -491,6 +491,18 @@ html {
     0 0 0px rgb(209, 32, 1);
 }
 
+.neon3 {
+  font-size: 26px;
+  color: rgb(255, 253, 253);
+  text-shadow:
+    0 0 5px rgb(235, 235, 235),
+    0 0 7px rgb(0, 0, 0),
+    0 0 10px rgb(0, 0, 0),
+    0 0 20px rgb(8, 34, 183),
+    0 0 30px rgb(8, 34, 183),
+    0 0 0px rgb(8, 34, 183);
+}
+
 .ligne9 {
   background-color: rgba(255, 255, 255, 0.671);
   width: 80px;
@@ -781,12 +793,14 @@ html {
   background-color: var(--yellow-color);
   box-shadow: 0 0 2rem 0rem var(--yellow-color);
 
+
 }
 
 .glowing-btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-shadow: none;
   animation: none;
+  transform: scale(1.1);
 }
 
 
@@ -853,6 +867,7 @@ html {
   color: rgba(255, 255, 255, 0.8);
   text-shadow: none;
   animation: none;
+  transform: scale(1.1);
 }
 
 
@@ -919,6 +934,7 @@ html {
   color: rgba(255, 255, 255, 0.8);
   text-shadow: none;
   animation: none;
+  transform: scale(1.1);
 }
 
 
@@ -984,6 +1000,7 @@ html {
   color: rgba(255, 255, 255, 0.8);
   text-shadow: none;
   animation: none;
+  transform: scale(1.1);
 }
 
 
@@ -1050,6 +1067,7 @@ html {
   color: rgba(255, 255, 255, 0.8);
   text-shadow: none;
   animation: none;
+  transform: scale(1.1);
 }
 
 
@@ -1115,6 +1133,7 @@ html {
   color: rgba(255, 255, 255, 0.8);
   text-shadow: none;
   animation: none;
+  transform: scale(1.1);
 }
 
 
@@ -1135,7 +1154,7 @@ html {
   position: relative;
   top: 800px;
   display: flex;
-  margin-bottom: 1000px;
+  margin-bottom: 1500px;
   justify-content: space-between;
 
 }
@@ -1158,7 +1177,7 @@ html {
 
 .p4image:hover {
   transform: scale(1.1);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
 }
 
 .quote img {
@@ -1200,6 +1219,90 @@ html {
   justify-content: center;
 }
 
+/* PageFive */
+#PageFive {
+  margin-bottom: 1000px;
+
+}
+
+.zoom {
+  margin-left: 45%;
+}
+
+.WebSiteDesign {
+
+  position: relative;
+  height: 500px;
+  width: 500px;
+  color: var(--yellow-color);
+  cursor: pointer;
+  transition-duration: 1s;
+  border: 0rem solid var(--yellow-color);
+  border-radius: 0.25em;
+  background: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+
+}
+
+.WebSiteDesign img {
+  width: 500px;
+}
+
+
+
+
+
+.WebSiteDesign::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  filter: blur(0em);
+
+
+  pointer-events: none;
+}
+
+.WebSiteDesign::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--cyan-color);
+  box-shadow: 0 0 2rem 0rem var(--cyan-color);
+
+
+}
+
+.WebSiteDesign:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: none;
+  animation: none;
+  transform: scale(1.1);
+}
+
+
+
+.WebSiteDesign:hover:after {
+  opacity: 1;
+}
+
+.RealWebsites {
+  gap: 85px;
+  padding-left: 10vh;
+  display: flex;
+
+
+}
 
 /* Mobile Support */
 
