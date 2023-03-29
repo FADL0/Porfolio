@@ -1297,9 +1297,12 @@ html {
 }
 
 .RealWebsites {
+  width: 100%;
+  margin-top: 400px;
   gap: 85px;
   padding-left: 10vh;
   display: flex;
+  flex-wrap: wrap;
 
 
 }
