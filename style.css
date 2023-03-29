@@ -165,7 +165,7 @@ html {
 
 
 .logo a {
-  background-image: url(logobase.png);
+  background-image: url(./img/logobase.png);
   background-size: 100%;
   display: inline-block;
   width: 50px;
@@ -175,7 +175,7 @@ html {
 }
 
 .logo a:hover {
-  background-image: url(logohover.png);
+  background-image: url(./img/logohover.png);
 
 }
 
@@ -184,7 +184,7 @@ html {
 }
 
 .cheat a {
-  background-image: url(logobase.png);
+  background-image: url(./img/logobase.png);
   background-size: 100%;
   display: none;
   width: 50px;
@@ -195,7 +195,7 @@ html {
 }
 
 .cheat a:hover {
-  background-image: url(logohover.png);
+  background-image: url(./img/logohover.png);
 
 
 }
