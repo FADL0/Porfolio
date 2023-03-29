@@ -1195,7 +1195,6 @@ html {
 }
 
 .ahoyo {
-  display: none;
   position: relative;
   top: 90px;
   justify-content: center;
@@ -1206,9 +1205,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .ahoyo {
-    display: block;
     top: 40px;
-
   }
 
   .Resumepar {
