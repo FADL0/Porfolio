@@ -80,7 +80,7 @@ html {
 
 .imlosingit {
   display: none;
-  background-image: url(halal.png);
+  background-image: url(./img/halal.png);
   cursor: pointer;
   position: fixed;
   right: 5px;
@@ -92,7 +92,7 @@ html {
 }
 
 .orami {
-  background-image: url(haram.png);
+  background-image: url(./img/haram.png);
 }
 
 .textcontainer {
@@ -498,9 +498,21 @@ html {
     0 0 5px rgb(235, 235, 235),
     0 0 7px rgb(0, 0, 0),
     0 0 10px rgb(0, 0, 0),
-    0 0 20px rgb(8, 34, 183),
-    0 0 30px rgb(8, 34, 183),
-    0 0 0px rgb(8, 34, 183);
+    0 0 20px rgb(10, 116, 255),
+    0 0 30px rgb(10, 116, 255),
+    0 0 0px rgb(10, 116, 255);
+}
+
+.neon4 {
+  font-size: 26px;
+  color: rgb(255, 253, 253);
+  text-shadow:
+    0 0 5px rgb(235, 235, 235),
+    0 0 7px rgb(0, 0, 0),
+    0 0 10px rgb(0, 0, 0),
+    0 0 20px rgb(201, 8, 208),
+    0 0 30px rgb(201, 8, 208),
+    0 0 0px rgb(201, 8, 208);
 }
 
 .ligne9 {
@@ -736,9 +748,10 @@ html {
   --yellow-color: hsl(61, 100%, 50%);
   --blue-color: hsl(251, 49%, 55%);
   --white-color: hsl(0, 0%, 100%);
-  --cyan-color: hsl(214, 100%, 52%);
+  --cyan-color: rgb(10, 116, 255);
   --green-color: hsl(128, 100%, 50%);
   --purple-color: hsl(283, 100%, 50%);
+  --pink-color: rgb(201, 8, 208);
 }
 
 /* Aloooota Glowing Buttons */
@@ -1220,6 +1233,7 @@ html {
 }
 
 /* PageFive */
+
 #PageFive {
   margin-bottom: 1000px;
 
@@ -1229,11 +1243,13 @@ html {
   margin-left: 45%;
 }
 
+
+
 .WebSiteDesign {
 
   position: relative;
-  height: 500px;
-  width: 500px;
+  height: 50vh;
+  width: 50vh;
   color: var(--yellow-color);
   cursor: pointer;
   transition-duration: 1s;
@@ -1246,11 +1262,14 @@ html {
 
 }
 
-.WebSiteDesign img {
-  width: 500px;
+
+.WebSiteDesign p {
+
+  color: var(--white-color);
+  font-size: medium;
+  text-align: center;
+
 }
-
-
 
 
 
@@ -1284,32 +1303,136 @@ html {
 }
 
 .WebSiteDesign:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(205, 12, 12, 0.8);
   text-shadow: none;
   animation: none;
   transform: scale(1.1);
 }
-
-
 
 .WebSiteDesign:hover:after {
   opacity: 1;
 }
 
 .RealWebsites {
+  gap: 50px;
   width: 100%;
-  margin-top: 400px;
-  gap: 85px;
-  padding-left: 10vh;
+  margin-top: 300px;
+  padding-left: 210px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.RealWebsites img {
+  width: 50vh;
+}
+
+/* Games */
+.zoom2 {
+  margin-left: 45%;
+  margin-top: 20%;
+}
+
+
+.GameDesign {
+
+  position: relative;
+  height: 50vh;
+  width: 50vh;
+  color: var(--yellow-color);
+  cursor: pointer;
+  transition-duration: 1s;
+  border: 0rem solid var(--yellow-color);
+  border-radius: 0.25em;
+  background: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+
+}
+
+
+.GameDesign p {
+
+  color: var(--white-color);
+  font-size: medium;
+  text-align: center;
+
+}
+
+
+
+.GameDesign::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  filter: blur(0em);
+
+
+  pointer-events: none;
+}
+
+.GameDesign::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--pink-color);
+  box-shadow: 0 0 2rem 0rem var(--pink-color);
 
 
 }
 
+.GameDesign:hover {
+  color: rgba(205, 12, 12, 0.8);
+  text-shadow: none;
+  animation: none;
+  transform: scale(1.1);
+}
+
+.GameDesign:hover:after {
+  opacity: 1;
+}
+
 /* Mobile Support */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+  .GameDesign {
+
+    position: relative;
+    height: 35vh;
+    width: 35vh;
+
+  }
+
+  .WebSiteDesign {
+
+    position: relative;
+    height: 35vh;
+    width: 35vh;
+
+  }
+
+  .RealWebsites img {
+    width: 35vh;
+  }
+
+  .zoom {
+    margin-left: 25%;
+  }
+
+  .RealWebsites {
+    gap: 150px;
+    padding-left: 10%;
+  }
+
   .ahoyo {
     top: 40px;
   }
