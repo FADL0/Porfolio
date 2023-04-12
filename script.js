@@ -1,15 +1,14 @@
 var body = document.getElementsByTagName('body')[0];
 body.style.backgroundColor = 'black';
 body.style.transitionDuration = '2s'
-
+let x = 600
 let P1 = document.querySelector(".P1")
 let P2 = document.querySelector(".P2")
 let P3 = document.querySelector(".P3")
 let P4 = document.querySelector(".P4")
 let P5 = document.querySelector(".P5")
 let P6 = document.querySelector(".P6")
-console.log(P1);
-var x = 600
+
 
 
 function BigScreen() {
@@ -58,7 +57,6 @@ function BigScreen() {
             P6.style.color = "gray"
             body.style.backgroundColor = 'black';
         }
-
     }
 }
 
@@ -100,7 +98,6 @@ function BodyColor() {
 
         BigScreen();
 
-
     }
 }
 BodyColor()
@@ -113,39 +110,65 @@ window.addEventListener("resize", function () {
 
 /* Burger */
 let menu = document.querySelector(".imlosingit");
-let menudisplay = document.querySelector(".demontime");
+let redisplay = document.querySelector(".demontime");
 
 
 menu.addEventListener('click', function () {
 
-    menudisplay.classList.toggle('demontimesupreme');
+    redisplay.classList.toggle('demontimesupreme');
     menu.classList.toggle('orami');
 
 })
 
 
 let home = document.querySelector(".home")
-let homechanges = document.querySelector(".homechanges")
+let homepages = document.querySelector(".homechanges")
 let about = document.querySelector(".About")
 let Exp = document.querySelector(".Exp")
-let Resum = document.querySelector(".Resum")
+let Resume = document.querySelector(".Resum")
 home.addEventListener('click', function () {
-    homechanges.classList.toggle('homechanges2')
+    homepages.classList.toggle('homechanges2')
 })
 
 home.addEventListener('click', function () {
-    menudisplay.classList.remove('demontimesupreme');
+    redisplay.classList.remove('demontimesupreme');
     menu.classList.remove('orami');
 })
 about.addEventListener("click", () => {
-    menudisplay.classList.remove('demontimesupreme');
+    redisplay.classList.remove('demontimesupreme');
     menu.classList.remove('orami');
 })
 Exp.addEventListener("click", () => {
-    menudisplay.classList.remove('demontimesupreme');
+    redisplay.classList.remove('demontimesupreme');
     menu.classList.remove('orami');
 })
-Resum.addEventListener('click', function () {
-    menudisplay.classList.remove('demontimesupreme');
+Resume.addEventListener('click', function () {
+    redisplay.classList.remove('demontimesupreme');
     menu.classList.remove('orami');
 })
+
+
+/* Animations */
+let object = new IntersectionObserver((Entries) => {
+    Entries.forEach((View) => {
+        if (View.isIntersecting) {
+            View.target.classList.add("show")
+        }
+    })
+})
+let hiddenElementsRight = document.querySelectorAll('.hidden-right');
+hiddenElementsRight.forEach((element) => {
+    object.observe(element)
+})
+let hiddenElementsLeft = document.querySelectorAll('.hidden-left');
+hiddenElementsLeft.forEach((element) => {
+    object.observe(element)
+})
+let hiddenElementsUp = document.querySelectorAll('.hidden-up');
+hiddenElementsUp.forEach((element) => {
+    object.observe(element)
+})
+let hiddenElementsDown = document.querySelectorAll('.hidden-down');
+hiddenElementsDown.forEach((element) => {
+    object.observe(element)
+}) 

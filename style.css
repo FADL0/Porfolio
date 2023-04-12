@@ -2,11 +2,13 @@
   padding: 0;
   margin: 0;
   user-select: none;
-  box-sizing: border-box;
+
+
 }
 
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 
 *,
@@ -131,6 +133,7 @@ html {
 
 /* Header */
 .header {
+
   z-index: 3;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.774) 0%, rgba(0, 0, 0, 0.788) 35%, rgba(0, 0, 0, 0.507) 100%);
   width: 100%;
@@ -152,7 +155,12 @@ html {
 
 }
 
+.header ul {
+  height: 0px;
+}
+
 .header a {
+
   margin-bottom: 20px;
   color: gray;
   text-decoration: none;
@@ -380,6 +388,7 @@ html {
 
 }
 
+
 .p2image {
   position: relative;
   right: 50px;
@@ -436,7 +445,8 @@ html {
 }
 
 #biographypar {
-  width: 85vh;
+  margin-top: 10vh;
+  width: 45vw;
   font-size: 28px;
 }
 
@@ -646,57 +656,58 @@ html {
 }
 
 .seperate {
-  padding-bottom: 120px;
-  padding-right: 120px;
+  position: relative;
+  margin-bottom: 150px;
+  height: 0;
+  width: 200px;
 }
 
 .seperate2 {
   position: relative;
   top: 500px;
+  height: 0;
+  width: 200px;
 
-
-}
-
-.Experiencedesc {
-  padding-top: 190px;
 
 }
 
 
 .Experiencedesc {
+  text-align: center;
   position: relative;
-  bottom: 430px;
+  bottom: 250px;
   left: 230px;
-  height: 150px;
-  width: 350px;
-}
-
-.Experiencedesc p {
-  position: absolute;
-  top: 180px;
   right: 40px;
   border: solid;
   color: rgba(255, 255, 255, 0.637);
   border-radius: 20px;
   width: 320px;
   height: 50px;
+
+}
+
+.Experiencedesc p {
+  line-height: 40px;
+  color: black;
 }
 
 
-.selectorBaseline1:hover~.Experiencedesc:before {
+
+
+.selectorBaseline1:hover~.Experiencedesc p:before {
   transition: opacity 100ms linear;
   color: rgb(253, 123, 16);
-  content: 'About 2 weeks of Html in My Web  Developer Course';
+  content: 'About 2 weeks of Html in My Web Developer Course';
 
 }
 
-.selectorBaseline2:hover~.Experiencedesc:before {
+.selectorBaseline2:hover~.Experiencedesc p:before {
 
   color: rgb(60, 122, 255);
   content: 'About 2 weeks of CSS in My Web Developer Course';
 }
 
-.selectorBaseline3:hover~.Experiencedesc:before {
+.selectorBaseline3:hover~.Experiencedesc p:before {
 
   color: rgb(253, 123, 16);
   content: '1 Month in Simplon The Basics Of Swift & Swift Ui';
@@ -733,10 +744,13 @@ html {
 /* Experiences to Learn */
 
 .experiencestoLearn {
-  gap: 45px;
+  margin: 10px;
+  width: 40%;
+  justify-content: space-around;
   position: relative;
-  left: 500px;
-  top: 200px;
+  height: 0%;
+  left: 25vw;
+  top: 5%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1325,7 +1339,7 @@ html {
 
 /* Games */
 .zoom2 {
-  margin-left: 45%;
+  margin-left: 35vw;
   margin-top: 20%;
 }
 
@@ -1401,6 +1415,10 @@ html {
 /* Mobile Support */
 
 @media screen and (max-width: 600px) {
+  .NEEDED2 {
+    display: block;
+  }
+
   .GameDesign {
 
     position: relative;
@@ -1423,6 +1441,10 @@ html {
 
   .zoom {
     margin-left: 25%;
+  }
+
+  .zoom2 {
+    margin-left: 25vw;
   }
 
   .RealWebsites {
@@ -1490,25 +1512,25 @@ html {
 
   .RealR8 {
     padding-left: 50px;
+
   }
 
   .Experiencedesc {
+    text-align: center;
     position: relative;
-    bottom: 430px;
-    left: 125px;
-    height: 150px;
-    width: 200px;
-  }
-
-  .Experiencedesc p {
-    position: absolute;
-    top: 140px;
-    right: 0px;
+    bottom: 250px;
+    left: 130px;
+    right: 40px;
     border: solid;
     color: rgba(255, 255, 255, 0.637);
     border-radius: 20px;
-    width: 220px;
-    height: 150px;
+    width: 50vw;
+    height: 100px;
+
+  }
+
+  .Experiencedesc p {
+    line-height: 45px;
   }
 
   #Pagethree {
@@ -1649,9 +1671,7 @@ html {
   }
 
   .myname {
-
-    padding: 6px;
-    padding-left: 40px;
+    padding: 0px;
     color: white;
     font-size: 30px;
   }
@@ -1661,4 +1681,68 @@ html {
   }
 
 
+}
+
+/* Animations */
+@media screen and (min-width: 601px) {
+  .hidden-up {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 3s;
+  }
+
+  .hidden-down {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 3s;
+  }
+
+  .hidden-left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s;
+  }
+
+  .hidden-right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 3s;
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
+  }
+
+  @media(prefers-reduced-motion) {
+    .hidden {
+      transition: none;
+    }
+  }
+
+  .delay:nth-child(1) {
+    transition-delay: 500ms;
+  }
+
+  .delay:nth-child(2) {
+    transition-delay: 800ms;
+  }
+
+  .delay:nth-child(3) {
+    transition-delay: 1000ms;
+  }
+
+  .delay:nth-child(4) {
+    transition-delay: 1400ms;
+  }
+
+  .delay:nth-child(5) {
+    transition-delay: 1700ms;
+  }
 }
