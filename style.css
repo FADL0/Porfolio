@@ -3,7 +3,6 @@
   margin: 0;
   user-select: none;
 
-
 }
 
 body {
@@ -26,6 +25,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ScrollBar */
+/* width */
+::-webkit-scrollbar {
+  z-index: -1;
+
+  width: 20px;
+}
+
+/* Track */
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  z-index: -1;
+  background: rgba(171, 165, 165, 0.403);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  z-index: -1;
+  background: #ec3e04;
+}
 
 /**header**/
 * {
@@ -469,7 +491,7 @@ html {
 
 #Pagethree {
 
-  padding-left: 200px;
+  padding-left: 10%;
   padding-top: 200px;
   display: flex;
   flex-wrap: wrap;
@@ -744,8 +766,7 @@ html {
 /* Experiences to Learn */
 
 .experiencestoLearn {
-  margin: 10px;
-  width: 40%;
+  width: 40vw;
   justify-content: space-around;
   position: relative;
   height: 0%;
