@@ -16,7 +16,7 @@ function BigScreen() {
     window.onscroll = function (event) {
         var scroll = window.pageYOffset;
 
-        if (scroll < 950) {
+        if (scroll < 1200) {
             body.style.backgroundColor = 'black';
             P1.style.color = "white"
             P2.style.color = "gray"
@@ -55,7 +55,7 @@ function BigScreen() {
             P4.style.color = "gray"
             P5.style.color = "white"
             P6.style.color = "gray"
-            body.style.backgroundColor = 'black';
+            body.style.backgroundColor = 'white';
         }
     }
 }
@@ -174,4 +174,6 @@ hiddenElementsDown.forEach((element) => {
 })
 
 
-/* Refresh */
+
+window.location.hash = "";
+history.replaceState(null, null, ' ');

@@ -29,7 +29,13 @@ html {
 /* width */
 ::-webkit-scrollbar {
   z-index: -1;
+  width: 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.774) 0%, rgba(0, 0, 0, 0.788) 35%, rgba(0, 0, 0, 0.507) 100%);
 
+}
+
+::-webkit-scrollbar {
+  z-index: -1;
   width: 20px;
 }
 
@@ -39,7 +45,13 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   z-index: -1;
-  background: rgba(171, 165, 165, 0.403);
+  background: rgba(255, 255, 255, 0.673);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.673);
   border-radius: 10px;
 }
 
@@ -155,10 +167,8 @@ html {
 
 /* Header */
 .header {
-
   z-index: 3;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.774) 0%, rgba(0, 0, 0, 0.788) 35%, rgba(0, 0, 0, 0.507) 100%);
-  width: 100%;
   height: 44px;
   text-align: center;
   list-style: none;
@@ -166,7 +176,7 @@ html {
   font-size: 14px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 110%;
 }
 
 .header ul li {
@@ -1720,6 +1730,8 @@ html {
     transition: all 3s;
   }
 
+
+
   .hidden-left {
     opacity: 0;
     filter: blur(5px);
@@ -1737,6 +1749,7 @@ html {
   .show {
     opacity: 1;
     filter: blur(0);
+    transform: translateY(0);
     transform: translateX(0);
 
   }
@@ -1765,5 +1778,9 @@ html {
 
   .delay:nth-child(5) {
     transition-delay: 1700ms;
+  }
+
+  .delay:nth-child(6) {
+    transition-delay: 2000ms;
   }
 }
