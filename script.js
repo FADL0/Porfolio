@@ -1,3 +1,13 @@
+
+/* Extras */
+window.location.hash = "";
+history.replaceState(null, null, ' ');
+let CvSpan = document.querySelector(".CV-change")
+
+
+
+
+
 var body = document.getElementsByTagName('body')[0];
 body.style.backgroundColor = 'black';
 body.style.transitionDuration = '2s'
@@ -12,7 +22,7 @@ let P6 = document.querySelector(".P6")
 
 
 function BigScreen() {
-
+    CvSpan.innerText = 'on the left'
     window.onscroll = function (event) {
         var scroll = window.pageYOffset;
 
@@ -48,7 +58,16 @@ function BigScreen() {
             P5.style.color = "gray"
             P6.style.color = "gray"
             body.style.backgroundColor = '#93C572';
-        } else {
+        } else if (scroll >= 4500 && scroll < 7500) {
+            P1.style.color = "gray"
+            P2.style.color = "gray"
+            P3.style.color = "gray"
+            P4.style.color = "gray"
+            P5.style.color = "white"
+            P6.style.color = "gray"
+            body.style.backgroundColor = 'black';
+        }
+        else {
             P1.style.color = "gray"
             P2.style.color = "gray"
             P3.style.color = "gray"
@@ -61,6 +80,7 @@ function BigScreen() {
 }
 
 function SmallScreen() {
+    CvSpan.innerText = 'on the top'
     window.onscroll = function (event) {
         var scroll = window.pageYOffset;
 
@@ -68,21 +88,28 @@ function SmallScreen() {
 
             body.style.backgroundColor = 'black';
 
+
         } else if (scroll >= 1250 && scroll < 2000) {
 
             body.style.backgroundColor = '#238c2a'
-        } else if (scroll >= 2000 && scroll < 3850) {
+        } else if (scroll >= 2000 && scroll < 4700) {
 
 
             body.style.backgroundColor = 'black';
 
-        } else if (scroll >= 4700 && scroll < 5000) {
+        } else if (scroll >= 4700 && scroll < 5800) {
 
             body.style.backgroundColor = '#93C572';
 
-        } else {
+        } else if (scroll >= 5800 && scroll < 10000) {
 
             body.style.backgroundColor = 'black';
+
+        }
+
+        else {
+
+            body.style.backgroundColor = 'white';
         }
 
     }
@@ -173,7 +200,3 @@ hiddenElementsDown.forEach((element) => {
     object.observe(element)
 })
 
-
-
-window.location.hash = "";
-history.replaceState(null, null, ' ');

@@ -45,13 +45,13 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   z-index: -1;
-  background: rgba(255, 255, 255, 0.673);
+  background: rgba(255, 255, 255, 0.596);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   z-index: -1;
-  background: rgba(255, 255, 255, 0.673);
+  background: rgba(255, 255, 255, 0.44);
   border-radius: 10px;
 }
 
@@ -176,7 +176,7 @@ html {
   font-size: 14px;
   position: fixed;
   top: 0;
-  width: 110%;
+  width: 100%;
 }
 
 .header ul li {
@@ -413,7 +413,7 @@ html {
 
   margin-top: 300px;
   justify-content: space-between;
-  padding-left: 300px;
+  padding-left: 10vw;
   display: flex;
 
 
@@ -1264,7 +1264,7 @@ html {
   color: rgb(255, 0, 0);
 }
 
-.Resumepar a:hover {
+.Resumepar span:hover {
   color: rgb(0, 22, 150);
 }
 
@@ -1290,8 +1290,8 @@ html {
 .WebSiteDesign {
 
   position: relative;
-  height: 50vh;
-  width: 50vh;
+  height: 20vw;
+  width: 20vw;
   color: var(--yellow-color);
   cursor: pointer;
   transition-duration: 1s;
@@ -1359,13 +1359,13 @@ html {
   gap: 50px;
   width: 100%;
   margin-top: 300px;
-  padding-left: 210px;
+  padding-left: 10vw;
   display: flex;
   flex-wrap: wrap;
 }
 
 .RealWebsites img {
-  width: 50vh;
+  width: 20vw;
 }
 
 /* Games */
@@ -1378,8 +1378,8 @@ html {
 .GameDesign {
 
   position: relative;
-  height: 50vh;
-  width: 50vh;
+  height: 20vw;
+  width: 20vw;
   color: var(--yellow-color);
   cursor: pointer;
   transition-duration: 1s;
@@ -1446,6 +1446,8 @@ html {
 /* Mobile Support */
 
 @media screen and (max-width: 600px) {
+
+
   .NEEDED2 {
     display: block;
   }
@@ -1503,6 +1505,7 @@ html {
   }
 
   #Pagefour {
+    top: 1000px;
     padding-left: 0px;
     padding-right: 0px;
     flex-wrap: wrap;
@@ -1523,18 +1526,18 @@ html {
   }
 
   .seperate2 {
-    position: relative;
-    top: 400px;
-    left: 90px;
+    top: 0vh;
+    left: 25vw;
 
 
   }
 
   .experiencestoLearn {
     z-index: -1;
-    padding-left: 70px;
+    padding: 50px;
     gap: 45px;
     position: relative;
+    width: 100vw;
     left: 0px;
     top: 200px;
     display: flex;
@@ -1592,13 +1595,9 @@ html {
   }
 
   .p2image {
-    position: relative;
-    left: 70px;
-    padding-right: 0;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-top: 00px;
+    left: 15vw;
+    padding: 0;
+
   }
 
 
