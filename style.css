@@ -5,6 +5,7 @@
 
 }
 
+
 body {
   background-color: black;
   overflow-x: hidden;
@@ -1783,3 +1784,5 @@ html {
     transition-delay: 2000ms;
   }
 }
+
+/* Animations End */
