@@ -153,6 +153,7 @@ let homepages = document.querySelector(".homechanges")
 let about = document.querySelector(".About")
 let Exp = document.querySelector(".Exp")
 let Resume = document.querySelector(".Resum")
+let projects = document.querySelector('.Projects')
 home.addEventListener('click', function () {
     homepages.classList.toggle('homechanges2')
 })
@@ -170,6 +171,10 @@ Exp.addEventListener("click", () => {
     menu.classList.remove('orami');
 })
 Resume.addEventListener('click', function () {
+    redisplay.classList.remove('demontimesupreme');
+    menu.classList.remove('orami');
+})
+projects.addEventListener('click', function () {
     redisplay.classList.remove('demontimesupreme');
     menu.classList.remove('orami');
 })
