@@ -1426,8 +1426,8 @@ html {
   bottom: 0;
   opacity: 0;
   z-index: -1;
-  background-color: var(--pink-color);
-  box-shadow: 0 0 2rem 0rem var(--pink-color);
+  background-color: var(--blue-color);
+  box-shadow: 0 0 2rem 0rem var(--blue-color);
 
 
 }
