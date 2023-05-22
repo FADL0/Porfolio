@@ -204,4 +204,8 @@ let hiddenElementsDown = document.querySelectorAll('.hidden-down');
 hiddenElementsDown.forEach((element) => {
     object.observe(element)
 })
+let hiddenElement = document.querySelectorAll('.hidden');
+hiddenElement.forEach((element) => {
+    object.observe(element)
+})
 
